@@ -1,0 +1,59 @@
+.winner{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 50px;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.battle-ground-wrapper{
+    display: block;
+    width: 500px;
+    height: 200px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}   
+
+.battle-ground{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.contestent{
+    display: block;
+    text-align: center;
+}
+
+.contestent-choice{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    font-size: 90px;
+}
+
+.cards-wrapper{
+    display: block;
+    width: 450px;
+    margin: 40px auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card{
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+    font-size: 50px;
+}
