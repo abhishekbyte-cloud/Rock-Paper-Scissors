@@ -7,26 +7,24 @@
     <title>rock paper scissor</title>
 </head>
 <body>
-    <div class="winner">
-        <p id="win"></p>
-    </div>
-    <div class="battle-ground-wrapper">
-        <div class="battle-ground">
+    <div class="main">
+        <div class="winner">
+            <p id="win"></p>
+        </div>
+        <div class="contestents-wrapper">
             <div class="contestent">
                 <button id="comp" class="contestent-choice">C</button>
-                <p>COMPUTER</p>
+                <p class="name">COMPUTER</p>
             </div>
             <div class="contestent">
                 <button id="you" class="contestent-choice">Y</button>
-                <p>YOU</p>
+                <p class="name">YOU</p>
             </div>
         </div>
-    </div>
-    <div class="cards-wrapper">
-        <div class="cards">
-            <button id="rock" class="card" onclick="rock()">✊🏻</button>
-            <button id="paper" class="card" onclick="paper()">✂</button>
-            <button id="scissor" class="card" onclick="scissor()">📃</button>
+        <div class="cards-wrapper">
+            <button id="rock" class="card">✊🏻</button>
+            <button id="paper" class="card">✂</button>
+            <button id="scissor" class="card">📃</button>
         </div>
     </div>
     <script src="main.js"></script>

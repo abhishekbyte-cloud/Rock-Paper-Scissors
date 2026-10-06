@@ -1,54 +1,70 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     border: 1px solid black;
     border-radius: 10px;
     height: 50px;
-    display: block;
-    margin: 25px auto;
-    text-align: center;
+    font-size: 25px;
 }
 
-.battle-ground-wrapper{
-    display: block;
-    width: 500px;
+.contestents-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
     height: 200px;
+    gap: 30px;
     margin-top: 35px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 20px;
     border: 1px solid black;
+    padding: 10px 20px;
 }   
 
-.battle-ground{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-
 .contestent{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
 }
 
 .contestent-choice{
-    width: 200px;
+    width: 175px;
     height: 150px;
     border-radius: 15px;
     font-size: 90px;
 }
 
-.cards-wrapper{
-    display: block;
-    width: 450px;
-    margin: 40px auto;
-    border-radius: 20px;
-    border: 1px solid black;
+.name{
+    margin: 0px;
 }
 
-.cards{
+.cards-wrapper{
     display: flex;
-    justify-content: space-around;
+    width: 400px;
+    margin: 35px auto;
+    border-radius: 20px;
     padding: 20px;
+    justify-content: center;
+    gap: 40px;
+    border: 1px solid black;
 }
 
 .card{

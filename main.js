@@ -1,27 +1,31 @@
-let userChoice = document.getElementById("you")
-let computerChoice = document.getElementById("comp")
-let whoIsTheWinner = document.getElementById("win")
+const userChoice = document.getElementById("you")
+const computerChoice = document.getElementById("comp")
+const whoIsTheWinner = document.getElementById("win")
 
-function rock(){
-    userChoice.textContent = document.getElementById("rock").innerText
+const rock = document.getElementById("rock")
+const paper = document.getElementById("paper")
+const scissor = document.getElementById("scissor")
+
+rock.addEventListener("click", function(){
+    userChoice.textContent = rock.innerText
     comp()
     decide(computerChoice.textContent, userChoice.textContent)
-}
+})
 
-function paper(){
-    userChoice.textContent = document.getElementById("paper").innerText
+paper.addEventListener("click", function(){
+    userChoice.textContent = paper.innerText
     comp()
     decide(computerChoice.textContent, userChoice.textContent)
-}
+})
 
-function scissor(){
-    userChoice.textContent = document.getElementById("scissor").innerText
+scissor.addEventListener("click", function(){
+    userChoice.textContent = scissor.innerText
     comp()
     decide(computerChoice.textContent, userChoice.textContent)
-}
+})
 
 function comp(){
-    let arr = ["✊🏻","📃","✂"]
+    const arr = ["✊🏻","📃","✂"]
     let choice = arr[Math.floor(Math.random()*3)]
     computerChoice.textContent = choice
 }
